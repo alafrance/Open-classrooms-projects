@@ -1,0 +1,46 @@
+@import '../font.scss';
+@import '../color.scss';
+@import '../buttons.scss';
+// Responsive general
+@import '../general.scss';
+
+
+.novel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+article{
+    margin-bottom: 15px;
+}
+a.linkNovel{
+    text-decoration: none;
+}
+.chapter{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chapter:last-of-type{
+    margin-bottom: 50px;
+}
+a.scale{
+    transform: scale(1);
+    transition: transform 700ms;
+    &:hover {
+        transform: scale(1.10);
+    }
+}
+@media screen and (min-width: 993px){
+    .flexWrap{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+    article{
+        width: 50%;
+    }
+}

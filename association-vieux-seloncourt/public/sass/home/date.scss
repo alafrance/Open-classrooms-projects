@@ -1,0 +1,21 @@
+section.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div.row{
+        width: 100%;
+    }
+    p{
+        margin: 0.8em;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:576px){
+    section.date{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

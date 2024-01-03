@@ -1,0 +1,21 @@
+// Responsive font, colors and buttons
+@import '../font.scss';
+@import '../color.scss';
+@import '../buttons.scss';
+// Responsive general
+@import '../general.scss';
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    a{
+        color: brown;
+    }
+}
+#profil{
+    margin-top: 0px;
+}
+

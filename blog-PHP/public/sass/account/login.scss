@@ -1,0 +1,42 @@
+// Responsive font, colors and buttons
+@import '../font.scss';
+@import '../color.scss';
+@import '../buttons.scss';
+@import '../form.scss';
+// Responsive general
+@import '../general.scss';
+
+section{
+    margin-top: 0px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .middle{
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+    }
+}
+@media screen and (min-width: 992px){
+    .middle{
+        padding-bottom: 56px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .middle{
+        align-items: center;
+        height: 100vh;
+
+    }
+}
+.normal{
+    font-weight: normal;
+}

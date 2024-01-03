@@ -1,0 +1,43 @@
+@import '../general/général.scss';
+@import '../general/nav.scss';
+@import '../general/buttons.scss';
+
+@import './slider.scss';
+@import './description.scss';
+@import './article.scss';
+@import './exposition.scss';
+@import './date.scss';
+// GENERAL
+@media screen and (min-width:1200px){
+    h1{
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width:576px){
+    h1{
+        font-size: 4rem;
+    }
+}
+h1{
+    margin-bottom: 100px;
+}
+p.explication{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1199px){
+    p.laptop{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    p.mobile{
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+// Responsive font, colors and buttons
+@import '../font.scss';
+@import '../color.scss';
+@import '../buttons.scss';
+// Responsive general
+@import '../general.scss';
+
+table{
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 15px;
+}
+div.addArticle{
+    margin-bottom: 30px ;
+    padding-top: 15px;
+}
+.miseEnFormeTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.actionArticle{
+    margin: 15px;
+    h2{
+        margin-bottom: 30px;
+    }
+
+}
+a.button{
+    margin: 5px;
+}
+
+section.commentary{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+section.user{
+    margin-bottom: 30px;
+    h2{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    table{
+        width: 100%;
+    }
+    tr, td{
+        display: flex;
+        flex-direction: column;
+    }
+    tr:first-of-type{
+        display: none;
+    }
+}

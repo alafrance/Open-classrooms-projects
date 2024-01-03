@@ -1,0 +1,55 @@
+@import '../general/nav.scss';
+@import '../general/général.scss';
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+section.allsize{
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+h2{
+    margin-bottom: 1em;
+}
+
+
+// profile information
+section.profileInformation{
+    div.informationsWithText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul.informations{
+            li{
+                margin-bottom: 25px;
+                font-size: 1.4rem;
+            }
+            li a{
+                &:hover{
+                    color: lightgray;
+                }
+                color: gray;
+                text-decoration: none;
+                i{
+                    margin-left: 10px;
+                }
+            }
+            i{
+                color: gray;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 556px){
+    h1, h2{
+        font-size: 3em;
+    }
+}

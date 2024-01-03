@@ -1,0 +1,118 @@
+/* ------------- */
+/* --- HEADER -- */
+/* ------------- */
+#home, #chapter, #backend, #blog, #profile, #admin{
+    color: lighten($header, 30%);
+    text-decoration: none;
+    &:hover{
+        color: $header;
+    }
+}
+
+nav#naviguation{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+}
+
+// Balise Général
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $background;
+    font-family: 'Bitter', serif;
+}
+section:first-of-type{
+    margin-top: 56px;
+}
+h1{
+    font-family: 'Valencia', sans-serif;
+    color: darken($title, 100%);
+    font-weight: bold;
+}
+h1, h2{
+    color: #332e3c;
+}
+h2, h3{
+    font-family: 'Patua One', cursive;
+}
+p{
+    font-family: 'Bitter', serif;
+}
+article{
+    p{
+   color: $paragraphe;
+    }
+    h1, h2, h3{
+        font-style: italic;
+    }
+}
+button, a {
+    outline: none;
+    text-decoration: none;
+}
+nav{
+    background-color: $background;
+}
+
+
+// Classes utilitary
+.italic{
+    font-style: italic;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.underline{
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+}
+.allSize{
+    width: 100%;
+}
+
+//footer
+footer{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+//Bannière
+.banniere{
+    background-color: white;
+    color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 998;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+//Responsive header
+@media screen and (max-width: 767px){
+    ul{
+        align-items: inherit;
+    }
+}
+@media screen and (min-width: 993px){
+    #navbar {
+        flex-direction: row-reverse;
+    }
+}

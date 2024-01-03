@@ -1,0 +1,10 @@
+{
+    "name": "app/alexis",
+    "description": "Site Association vieux seloncourt",
+    "autoload": {
+        "psr-4": {
+            "Config\\" : "config",
+            "App\\" : "src"
+        }
+    }
+}

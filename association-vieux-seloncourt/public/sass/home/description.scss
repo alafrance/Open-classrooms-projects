@@ -1,0 +1,56 @@
+// DESCRIPTIF
+
+section.description{
+    img {
+        border: 8px outset #E6EAEF;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, .8);
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    img:hover {
+        border: 8px inset #E6EAEF;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, .8) inset;
+    }
+    $color_figcaption: black;
+    figcaption{
+        font-style: italic;
+        display: inline-block;
+        margin: 6px;
+        font-size: inherit;
+        line-height: 1.42;
+        padding: 1.2em 1.6em;
+        font-weight: normal;
+        border-width: 3px;
+        border-style: solid;
+        background: transparent;
+        border-radius: 0.4em;
+        user-select: none;
+        vertical-align: bottom;
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s, background-color 0.3s;
+        border-radius: 0.5em 0.6em/0.6em 1em 3em 1em;
+        color: $color_figcaption;
+        border-color: $color_figcaption;
+        box-shadow: 6px 0 0 0 $color_figcaption, 6px 6px 0 0 $color_figcaption, 0 6px 0 0 $color_figcaption;
+    }
+    figcaption:hover {
+        box-shadow: 8px 0 0 0 $color_figcaption, 8px 8px 0 0 $color_figcaption, 0 8px 0 0 $color_figcaption;
+    }
+    $color_figcaption_active: gray;
+    figcaption:active {
+        background-color: $color_figcaption_active;
+        color: white;
+        box-shadow: 2px 0 0 0 $color_figcaption_active, 2px 2px 0 0 $color_figcaption_active, 0 2px 0 0 $color_figcaption_active;
+    }
+    p{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:1208px){
+    section.description{
+        div a.first{
+            margin-bottom: 3em;
+        }
+    }
+}

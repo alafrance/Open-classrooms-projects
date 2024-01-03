@@ -1,0 +1,358 @@
+// Responsive font, colors and buttons
+@import 'font.scss';
+@import 'color.scss';
+@import 'buttons.scss';
+// Responsive general
+@import 'general.scss';
+
+/* -------------------- */
+/* ----- GENERAL  ----- */
+/* -------------------- */
+
+
+/* --------------------- */
+/* ----- SLIDESHOW ----- */
+/* --------------------- */
+/* Container slider */
+#slideshow{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+.container-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+#slider {
+    display: flex;
+    width: 300%;
+    height: auto;
+    transition: 3s;
+    animation: 10s slide infinite;
+}
+.img-slide {
+    width: 100%;
+    height: auto;
+}
+#slider img{
+    display: block;
+    height: auto;
+    width: 100vw;
+}
+/* Texte slider */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #E6EAEF;
+    h1.titleh1{
+        text-align: center;
+        position: relative;
+        color: #E6EAEF;
+        font-family: 'Valencia', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+        span{
+            font-size: 3.5rem;
+        }
+    }
+    p{
+        position: relative;
+        font-size: 1.3rem;
+        font-family: 'Bitter', serif;
+    }
+    
+}
+.title h1, .title p, .title a{
+    z-index: 2;
+}
+@keyframes slide{
+    0%, 30%, 100% {
+        transform: translateX(0);
+    }
+    40%, 60% {
+        transform: translateX(-33.6%);
+    }
+    70%, 90% {
+        transform: translateX(-67.2%);
+    }
+}
+
+
+/* --------------------- */
+/* ------- NOVEL ------- */
+/* --------------------- */
+// Novel
+
+a.scale{
+    transform: scale(1);
+    transition: transform 500ms;
+    &:hover {
+        transform: scale(1.10);
+    }
+}
+#novel{
+    margin-top: 50px;
+    a{
+        text-decoration: none;
+    }
+    .allChapter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .chapter {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 15px;
+        }
+    }
+    .buttonAllChapter{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+.marginH1{
+    margin-bottom: 20px;
+}
+// Flex icones, chapitre roman
+
+
+
+/* --------------------- */
+/* ----- BIOGRAPHY ----- */
+/* --------------------- */
+// Biographie général
+#biography{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin-top: 30px;
+    }
+    img{
+        height: auto;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+}
+// Bulle biographie mise en forme
+
+.pinched {
+    position: relative;
+    padding: 15px;
+    margin: 50px 0 3em;
+    text-align: center;
+    background: black;
+    border-radius: 30px;
+
+    p{
+        margin: 1rem 0;
+        color: white;
+        &::after{
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 50%;
+            height: 20px;
+            background: $background;
+            border-bottom-right-radius: 15px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 50%;
+            height: 20px;
+            background: $background;
+            border-bottom-left-radius: 15px;
+        }
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        width: 100px;
+        height: 20px;
+        margin: 0 0 0 -50px;
+        background: black;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 50%;
+        height: 20px;
+        background:$background;
+        border-bottom-right-radius: 15px;
+    }
+}
+.sectionicon{
+    margin-top: 50px;
+}
+#icon {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    h2{
+        font-size: 2.6rem;
+    }
+    .heart{
+        color: #f92a82
+    }
+    .plane{
+        color: #30bced;
+    }
+    .book{
+        color: #8c4843;
+    }
+    i{
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+}
+/* ---------------------- */
+/* ----- RESPONSIVE ----- */
+/* ---------------------- */
+
+/* Normal screen */
+@media screen and (min-width: 993px){
+    .title {
+    position: absolute;
+    }
+    #linkNovel{
+        color: #E6EAEF;
+    }
+    #navbar {
+        flex-direction: row-reverse;
+    }
+    .pinched{
+        width: 50%;
+    }
+    #icon div{
+       width: 33%;
+    }
+    .chapter{
+        width: 33%;
+        img{
+            width: 640px;
+            height: 427px;
+        }
+    }
+    #biography img{
+        width: 40%;
+    }
+    .buttonAllChapter{
+        width: 90%;
+    }
+}
+
+/* adapt screen for novel */
+@media screen and (min-width: 993px) and (max-width: 2019px){
+    #novel{
+        .allChapter{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /* Slideshow */
+    .title {
+    position: absolute;
+    }
+    ul{
+        align-items: inherit;
+    }
+    .pinched{
+        width: 70%;
+    }
+    #icon{
+        align-items: center;
+        flex-direction: column;
+        div{
+            width: 100%;
+        }
+    }
+    #novel{
+        img{
+            width: 70%;
+        }
+    }
+    #biography{
+        img{
+            width: 70%;
+        }
+    }
+    .allChapter{
+        flex-direction: column;
+    }
+  }
+/* Mobile */
+@media screen and (max-width: 767px){
+    .title {
+        text-align: center;
+        a, p{
+            color: $title;
+        }
+        h1.titleh1{
+            color: $title;
+        }
+
+    }
+    
+    #icon{
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 100%;
+        }
+    }
+    #biography{
+        img{
+            width: 90%;
+        }
+    }
+    #slideshow{
+        background-color: $background;
+        .button{
+            margin-bottom: 30px;
+        }
+    }
+    .allChapter{
+        flex-direction: column;
+    }
+    .chapter{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .buttonAllChapter{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 360px){
+    .title{
+        h1{
+            span{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+

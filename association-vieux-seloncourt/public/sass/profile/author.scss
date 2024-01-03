@@ -1,0 +1,22 @@
+@import './profile.scss';
+@import './admin_author.scss';
+// Auteur
+
+div.linkArticle{
+    h2{
+        margin-bottom: 0;
+    }
+    div.row{
+        margin: 3em;
+        justify-content: center;
+    }
+
+}
+
+table.author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}

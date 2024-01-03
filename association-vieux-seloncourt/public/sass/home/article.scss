@@ -1,0 +1,54 @@
+// ARTICLES
+section.articles{
+    margin-top: 50px;
+    div.image{
+        max-height: 700px;
+        overflow: hidden;
+    }
+    article{
+        h2, img, p, div.content, div.title{
+            width: 100%;
+        }
+        h2{
+            margin-top: 30px;
+            text-align: center;
+        }
+        img{
+            position: relative;
+        }
+        div.title{
+            margin-bottom: 22px;
+            height: 250px;
+            overflow: hidden;
+            h2{
+                font-size: 5em;
+                color: #403D39;
+            }
+
+        }
+        p{
+            font-size: 1em;
+        }
+        div.content{
+            margin-top: 30px;
+        }
+        a.linkArticle{
+            color: #c0c0c0;
+        }
+    }
+    div.footer{
+        margin-top: 50px;
+        p{
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+    }
+}
+@media screen and (min-width:1200px){
+    section.articles{
+        img{
+        }
+    }
+}
+

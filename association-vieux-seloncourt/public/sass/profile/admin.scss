@@ -1,0 +1,55 @@
+@import './profile.scss';
+@import './admin_author.scss';
+//Administrateur
+//Articles
+h1.titleArticle {
+    margin-bottom: 10px;
+}
+p.admin{
+    margin-bottom: 40px;
+}
+h2.titleButton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2.titleTableArticle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+div.linkArticle .buttons{
+    display: flex;
+    justify-content: space-around;
+}
+section.commentary{
+    p{
+        margin: 7em;
+    }
+}
+hr.commentary{
+    margin-bottom: 0;
+    margin-top: 7em;
+}
+hr.user{
+    margin-bottom: 7em;
+}
+button.btn.btn-secondary{
+    margin: 0;
+}
+input[type="text"].category{
+    width: 20%;
+    text-align: center;
+}
+p.col-4{
+    padding-left: 0;
+    padding-right: 0;
+}
+a.btn.btn-tertiary.supCategory{
+    height: 57px;
+    font-size: 0.8em;
+    padding: 0.6em 1.6em;
+    margin-left: 0;
+    width: 100%;
+}
+h2.commentary{
+    margin: .5em;
+}

@@ -1,0 +1,39 @@
+@import '../general/général.scss';
+@import '../general/nav.scss';
+
+p{
+    font-size: 1.2em;
+}
+section.commentary{
+    h1{
+        margin: .5em;
+        margin-left: 0;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        div:nth-child(2){
+            margin-left: 2em;
+        }
+    }
+    a.signale{
+        color: #dc3545;
+        font-size: 1em;
+    }
+    hr:last-of-type{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    section.commentary{
+        margin-left: 2em;
+    }
+}
+@media screen and (max-width: 550px){
+    section.commentary{
+        margin-left: .3em;
+        h1{
+            font-size: 3.5em;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+// Responsive font, colors and buttons
+@import 'font.scss';
+@import 'color.scss';
+@import 'buttons.scss';
+@import 'form.scss';
+// Responsive general
+@import 'general.scss';
+
+div.titleAndChapter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div.inputAndLabel{
+    margin-bottom: 20px;
+}
+
+label{
+    text-decoration: underline;
+}
+div.tox{
+    margin: 23px;
+}
+@media screen and (min-width: 993px){
+    div.titleAndChapter{
+        flex-direction: row;
+    }
+}

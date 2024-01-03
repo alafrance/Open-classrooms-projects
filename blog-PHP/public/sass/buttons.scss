@@ -1,0 +1,108 @@
+@import "https://assets.loupbrun.ca/fonts/booster/stylesheet.css";
+.button {
+  display: inline-block;
+  font-size: inherit;
+  line-height: 1.42;
+  padding: 0.6em 1.6em;
+  font-weight: normal;
+  border-width: 2px;
+  border-style: solid;
+  background: transparent;
+  border-radius: 1.46em;
+  cursor: pointer;
+  font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+  user-select: none;
+  vertical-align: bottom;
+  position: relative;
+  border-style: solid;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 2;
+}
+.button.button-disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+.button.button-disabled:active {
+  opacity: 0.6;
+}
+.button:hover:after {
+  transform: scaleX(1);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 1.46em;
+  transform: scaleX(0.7);
+  opacity: 0;
+  transition: transform 0.8s, opacity 0.3s;
+}
+.button-primary {
+  color: $button;
+  border-color: $button;
+}
+.button-primary:hover {
+  color: #E6EAEF;
+  background-color: #52C11F;
+}
+.button-primary:active {
+  background-color: #4cb41d;
+}
+.button-primary:active:after {
+  background-color: #4cb41d;
+}
+.button-primary:after {
+  background-color: #52C11F;
+}
+
+.button-secondary {
+    color: $blue;
+    border-color: $blue;
+}
+
+.button-secondary:hover {
+    color: #E6EAEF;
+    background-color: #0B44EF;
+}
+
+.button-secondary:active {
+    background-color: #0a40e0;
+}
+
+.button-secondary:active:after {
+    background-color: #0a40e0;
+}
+
+.button-secondary:after {
+    background-color: #0B44EF;
+}
+
+button-tertiary {
+  color: #FF006A;
+  border-color: #FF006A;
+}
+
+button-tertiary:hover {
+  color: #E6EAEF;
+  background-color: #FF006A;
+}
+
+button-tertiary:active {
+  background-color: #f00064;
+}
+
+button-tertiary:active:after {
+  background-color: #f00064;
+}
+
+.button-tertiary:after {
+  background-color: #FF006A;
+}
