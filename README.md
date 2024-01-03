@@ -1,4 +1,4 @@
-# Projets Open Classrooms Web Develop Bac+2
+# Projects Open Classrooms Web Developer (Bac+2)
 Projets fait durant ma formation de developpeur web a Openclassrooms  
 ## Liste Projets
 - Web Agency (Learn HTML, CSS)
